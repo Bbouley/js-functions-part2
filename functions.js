@@ -29,3 +29,25 @@ function longestWord(string){
 }
 
 console.log(longestWord(longString));
+
+function factorial(num){
+  var tempNum = 1
+  for (i=1; i<=num; i++){
+    tempNum *= i;
+  } return tempNum;
+}
+
+console.log(factorial(5))
+
+function palindrome(string){
+  var tempString = string.split('');
+  var tempString2 = tempString.reverse();
+  var tempString3 = tempString2.join('');
+  if(tempString3 === string){
+    return tempString3 + ' ' + true;
+  } else {
+    return tempString3 + ' ' + false;
+  }
+}
+
+console.log(palindrome('this is a string'));
